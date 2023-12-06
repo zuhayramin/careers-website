@@ -9,6 +9,10 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous" />
         <style>
+            h1,
+            h2 {
+                text-align: center;
+            }
             #banner {
                 height: 250px;
                 width: 100%;
@@ -24,29 +28,56 @@
                 class="img-fluid"
                 id="banner"
                 src="../static/banner.jpg"
-                alt="Motivational Image" />
+                alt="Motivational Image"
+                style="
+                    border-radius: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                " />
 
-            <h2 class="mt-2">About Me</h2>
-            <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus rerum facere culpa explicabo nihil, blanditiis minima
-                at vero dolore ipsa libero id repellat iusto repellendus quam
-                quibusdam a tempore aliquid soluta inventore. Id nostrum
-                doloribus sint, quos atque quisquam animi! Quam minus recusandae
-                fugiat quaerat vel laboriosam perferendis adipisci eligendi
-                dicta quas consequatur doloribus et itaque, amet molestias non
-                tempora. Cum, enim maxime quibusdam placeat consequatur quaerat
-                voluptatum perspiciatis eius autem delectus magnam dolorum quod
-                sunt culpa voluptate soluta quisquam, maiores ab commodi rem
-                fugiat vero, unde sapiente ex! Fugit modi autem atque
-                reprehenderit nam accusantium facere optio libero ad!
-            </p>
+            <h2 class="mt-5 mb-3">About Me</h2>
+            <div
+                style="
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                ">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus rerum facere culpa explicabo nihil, blanditiis
+                    minima at vero dolore ipsa libero id repellat iusto
+                    repellendus quam quibusdam a tempore aliquid soluta
+                    inventore. Id nostrum doloribus sint, quos atque quisquam
+                    animi! Quam minus recusandae fugiat quaerat vel laboriosam
+                    perferendis adipisci eligendi dicta quas consequatur
+                    doloribus et itaque, amet molestias non tempora. Cum, enim
+                    maxime quibusdam placeat consequatur quaerat voluptatum
+                    perspiciatis eius autem delectus magnam dolorum quod sunt
+                    culpa voluptate soluta quisquam, maiores ab commodi rem
+                    fugiat vero, unde sapiente ex! Fugit modi autem atque
+                    reprehenderit nam accusantium facere optio libero ad!
+                </p>
+                <img
+                    src="../static/employees.jpg"
+                    alt="Employees working"
+                    style="height: 320px; border-radius: 10px" />
+            </div>
 
-            <h2 class="mt-2">Open Position</h2>
+            <h2 class="mt-5">Open Position</h2>
             <p class="lead">
                 {% for job in jobs %} {% include 'allJobs.html' %} {% endfor %}
             </p>
-            <button class="btn btn-primary btn-lg">Contact Us</button>
+
+            <div
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                ">
+                <button class="btn btn-primary btn-lg mt-3 mb-5">
+                    Contact Us
+                </button>
+            </div>
 
             <footer>Copyright 2023, Zuhayr Amin</footer>
         </div>
