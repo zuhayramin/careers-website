@@ -3,54 +3,31 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Careers Website</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
         <style>
-            * {
-                font-family: Roboto;
-            }
-
-            h1 {
-                font-size: 40px;
-                font-weight: normal;
-                text-align: center;
-            }
-
-            #banner-img {
-                width: 100%;
+            #banner {
                 height: 250px;
+                width: 100%;
                 object-fit: cover;
             }
-
-            h2 {
-                font-size: 32px;
-                font-weight: normal;
-            }
-
-            #container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                max-width: 720px;
-            }
-
-            footer {
-                margin-top: 20px;
-            }
         </style>
+        <title>Careers Website</title>
     </head>
     <body>
-        <div id="container">
-            <h1>Careers Website</h1>
+        <div class="container">
+            <h1 class="mt-4">Careers Website</h1>
             <img
-                id="banner-img"
+                class="img-fluid"
+                id="banner"
                 src="../static/banner.jpg"
-                alt="Motivational Image"
-                height="320px" />
+                alt="Motivational Image" />
 
-            <h2>About Me</h2>
-            <p class="normal-text">
+            <h2 class="mt-2">About Me</h2>
+            <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus rerum facere culpa explicabo nihil, blanditiis minima
                 at vero dolore ipsa libero id repellat iusto repellendus quam
@@ -65,9 +42,9 @@
                 reprehenderit nam accusantium facere optio libero ad!
             </p>
 
-            <h2>Open Position</h2>
-            <p class="normal-text">TODO - I will show jobs here</p>
-            <button>Contact Us</button>
+            <h2 class="mt-2">Open Position</h2>
+            <p class="lead">TODO - I will show jobs here</p>
+            <button class="btn btn-primary btn-lg">Contact Us</button>
 
             <footer>Copyright 2023, Zuhayr Amin</footer>
         </div>
