@@ -3,32 +3,73 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
         <title>Careers Website</title>
+        <style>
+            * {
+                font-family: Roboto;
+            }
+
+            h1 {
+                font-size: 40px;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            #banner-img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            h2 {
+                font-size: 32px;
+                font-weight: normal;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 720px;
+            }
+
+            footer {
+                margin-top: 20px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Careers Website</h1>
-        <img
-            src="../static/banner.jpg"
-            alt="Motivational Image"
-            height="320px" />
+        <div id="container">
+            <h1>Careers Website</h1>
+            <img
+                id="banner-img"
+                src="../static/banner.jpg"
+                alt="Motivational Image"
+                height="320px" />
 
-        <h2>About Me</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            rerum facere culpa explicabo nihil, blanditiis minima at vero dolore
-            ipsa libero id repellat iusto repellendus quam quibusdam a tempore
-            aliquid soluta inventore. Id nostrum doloribus sint, quos atque
-            quisquam animi! Quam minus recusandae fugiat quaerat vel laboriosam
-            perferendis adipisci eligendi dicta quas consequatur doloribus et
-            itaque, amet molestias non tempora. Cum, enim maxime quibusdam
-            placeat consequatur quaerat voluptatum perspiciatis eius autem
-            delectus magnam dolorum quod sunt culpa voluptate soluta quisquam,
-            maiores ab commodi rem fugiat vero, unde sapiente ex! Fugit modi
-            autem atque reprehenderit nam accusantium facere optio libero ad!
-        </p>
+            <h2>About Me</h2>
+            <p class="normal-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus rerum facere culpa explicabo nihil, blanditiis minima
+                at vero dolore ipsa libero id repellat iusto repellendus quam
+                quibusdam a tempore aliquid soluta inventore. Id nostrum
+                doloribus sint, quos atque quisquam animi! Quam minus recusandae
+                fugiat quaerat vel laboriosam perferendis adipisci eligendi
+                dicta quas consequatur doloribus et itaque, amet molestias non
+                tempora. Cum, enim maxime quibusdam placeat consequatur quaerat
+                voluptatum perspiciatis eius autem delectus magnam dolorum quod
+                sunt culpa voluptate soluta quisquam, maiores ab commodi rem
+                fugiat vero, unde sapiente ex! Fugit modi autem atque
+                reprehenderit nam accusantium facere optio libero ad!
+            </p>
 
-        <h2>Open Position</h2>
-        <p>TODO - I will show jobs here</p>
-        <button>Contact Us</button>
+            <h2>Open Position</h2>
+            <p class="normal-text">TODO - I will show jobs here</p>
+            <button>Contact Us</button>
+
+            <footer>Copyright 2023, Zuhayr Amin</footer>
+        </div>
     </body>
 </html>
