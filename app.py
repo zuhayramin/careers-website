@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ JOBS = [
     },
     {
         'id':2,
-        'title': 'Fronend Engineer',
+        'title': 'Frontend Engineer',
         'location': 'Dubai, UAE',
         'salary': 'AED 190,000' 
     },
@@ -31,7 +31,11 @@ JOBS = [
 
 @app.route('/')
 def index():
-    return render_template('home.html', jobs = JOBS)
+    return render_template('home.html', jobs =JOBS)
+
+@app.route('/api/jobs')
+def list_jobs():
+    return jsonify(JOBS)
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', debug = True)
