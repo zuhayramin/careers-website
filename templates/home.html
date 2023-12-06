@@ -43,7 +43,9 @@
             </p>
 
             <h2 class="mt-2">Open Position</h2>
-            <p class="lead">TODO - I will show jobs here</p>
+            <p class="lead">
+                {% for job in jobs %} {% include 'allJobs.html' %} {% endfor %}
+            </p>
             <button class="btn btn-primary btn-lg">Contact Us</button>
 
             <footer>Copyright 2023, Zuhayr Amin</footer>
